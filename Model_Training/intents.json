@@ -1,0 +1,94 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": ["Hi", "Hello", "Hey", "What's up?", "Good morning", "Good evening"],
+            "responses": ["Hey there!", "Hello! How can I assist you with calculus?", "Hi! Ready to tackle some calculus questions?", "Hey! How's your math journey going?"]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": ["Bye", "See you later", "Goodbye", "Take care", "Catch you later"],
+            "responses": ["Goodbye! Keep practicing calculus!", "See you! Don't forget to review your derivatives!", "Take care! Hope I helped.", "Bye-bye! Happy learning!"]
+        },
+        {
+            "tag": "lhospitals",
+            "patterns": ["What is Lhospital's Rule?", "How do I use Lhospital's Rule?", "When should I use lhospital's Rule?", "Explain Lhospital's Rule"],
+            "responses": ["Lhospital's Rule is used when a limit results in indeterminate forms like 0/0 or ∞/∞. You take the derivative of the numerator and denominator separately and then reevaluate the limit.", "Use Lhospital's Rule when direct substitution results in 0/0 or infinity/infinity. Differentiate the numerator and denominator separately, then take the limit again."]
+        },
+        {
+            "tag": "logdiff",
+            "patterns": ["When do I use logarithmic differentiation?", "What is logarithmic differentiation?", "Why use logarithmic differentiation?", "How does logarithmic differentiation work?"],
+            "responses": ["Logarithmic differentiation is useful for functions that are products, quotients, or exponentials. It simplifies differentiation by taking the natural log first.", "Use logarithmic differentiation for functions like f(x) = x^x or products of multiple functions."]
+        },
+        {
+            "tag": "derivative_rules",
+            "patterns": ["What are the basic derivative rules?", "Explain differentiation rules", "How do I differentiate a function?"],
+            "responses": ["Some key derivative rules: Power Rule (d/dx [x^n] = nx^(n-1)), Product Rule, Quotient Rule, and Chain Rule.", "To differentiate a function, apply the power rule, product rule, quotient rule, or chain rule depending on the structure of the function."]
+        },
+        {
+            "tag": "integration_rules",
+            "patterns": ["What are the basic integration rules?", "How do I integrate a function?", "Explain integration rules"],
+            "responses": ["Basic integration rules include: Power Rule (Integral of x^n dx = (x^(n+1))/(n+1)), Integration by Substitution, and Integration by Parts.", "To integrate a function, determine if you can use basic rules or need substitution or integration by parts."]
+        },
+        {
+            "tag": "chain_rule",
+            "patterns": ["What is the chain rule?", "How does the chain rule work?", "When do I use the chain rule?"],
+            "responses": ["The Chain Rule is used to differentiate composite functions: if y = f(g(x)), then dy/dx = f'(g(x)) * g'(x).", "Use the Chain Rule when differentiating functions inside other functions, like sin(3x) or (2x+1)^5."]
+        },
+        {
+            "tag": "product_rule",
+            "patterns": ["What is the product rule?", "How do I differentiate a product of functions?", "Explain the product rule"],
+            "responses": ["The Product Rule states: If f(x) and g(x) are differentiable, then (d/dx)[f(x)g(x)] = f'(x)g(x) + f(x)g'(x).", "Use the Product Rule when differentiating the product of two functions, like x^2 * sin(x)."]
+        },
+        {
+            "tag": "quotient_rule",
+            "patterns": ["What is the quotient rule?", "How do I differentiate a quotient?", "Explain the quotient rule"],
+            "responses": ["The Quotient Rule states: If f(x) and g(x) are differentiable, then (d/dx) [f(x)/g(x)] = (f'(x)g(x) - f(x)g'(x)) / g(x)^2.", "Use the Quotient Rule when differentiating a fraction, like (x^2 + 1) / (x - 3)."]
+        },
+        {
+            "tag": "limits",
+            "patterns": ["What is a limit in calculus?", "How do I calculate limits?", "Explain limits"],
+            "responses": ["A limit describes the value that a function approaches as the input approaches a certain value.", "To calculate a limit, try direct substitution first. If you get 0/0 or ∞/∞, consider factoring, rationalization, or L'Hôpital's Rule."]
+        },
+        {
+            "tag": "definite_integral",
+            "patterns": ["What is a definite integral?", "How do I evaluate a definite integral?", "Explain definite integrals"],
+            "responses": ["A definite integral computes the area under a curve between two limits: Integral[a,b] f(x)dx. Use the Fundamental Theorem of Calculus to evaluate it.", "To solve a definite integral, find the antiderivative of f(x), then evaluate it at the upper and lower limits."]
+        },
+        {
+            "tag": "indefinite_integral",
+            "patterns": ["What is an indefinite integral?", "How do I solve an indefinite integral?", "Explain indefinite integrals"],
+            "responses": ["An indefinite integral represents the antiderivative of a function: Integralf(x)dx = F(x) + C, where C is the constant of integration.", "To solve an indefinite integral, find the function whose derivative is f(x) and add C."]
+        },
+        {
+            "tag": "implicit_diff",
+            "patterns": ["What is implicit differentiation?", "How does implicit differentiation work?", "When do I use implicit differentiation?", "Implicit differentiation example"],
+            "responses": ["Implicit differentiation is used when differentiating equations where y is not explicitly solved for x.", "Differentiate both sides of the equation, treating y as a function of x, and use dy/dx for y terms.", "Use implicit differentiation when given an equation like x^2 + y^2 = 1, where y is not isolated."]
+        },
+        {
+            "tag": "second_derivative",
+            "patterns": ["What is the second derivative?", "How do I find the second derivative?", "Explain second derivatives", "Second derivative test"],
+            "responses": ["The second derivative is the derivative of the first derivative. It gives information about concavity and inflection points.", "To find the second derivative, differentiate the first derivative again.", "The second derivative test helps determine whether a critical point is a local maximum or minimum."]
+        },
+        {
+            "tag": "related_rates",
+            "patterns": ["What are related rates?", "How do I solve related rates problems?", "Explain related rates"],
+            "responses": ["Related rates problems involve finding the rate of change of one quantity in relation to another.", "Use implicit differentiation and the chain rule to relate different rates of change.", "A classic example: If a balloon is inflating, how fast is the radius changing with respect to time?"]
+        },
+        {
+            "tag": "integration_by_parts",
+            "patterns": ["What is integration by parts?", "How does integration by parts work?", "Integration by parts formula", "When do I use integration by parts?"],
+            "responses": ["Integration by parts is used for integrals of the form ∫ u dv = uv - ∫ v du.", "Choose u and dv wisely: u should be easy to differentiate, and dv should be easy to integrate.", "Use integration by parts for integrals like ∫ x e^x dx or ∫ ln(x) dx."]
+        },
+        {
+            "tag": "partial_fractions",
+            "patterns": ["What is partial fraction decomposition?", "How do I decompose a fraction into partial fractions?", "Explain partial fractions"],
+            "responses": ["Partial fraction decomposition breaks a rational function into simpler fractions for easier integration.", "To decompose a fraction, factor the denominator and set up an equation with unknown coefficients.", "Use partial fractions for integrals like ∫ (2x + 3) / (x^2 - x - 2) dx."]
+        },
+        {
+            "tag": "taylor_series",
+            "patterns": ["What is a Taylor series?", "How does a Taylor series work?", "Explain Maclaurin series", "Taylor series example"],
+            "responses": ["A Taylor series represents a function as an infinite sum of derivatives at a point: f(x) = Σ (f^n(a) / n!) (x - a)^n.", "A Maclaurin series is a Taylor series centered at x = 0.", "Common Maclaurin series: e^x = 1 + x + x^2/2! + x^3/3! + ..."]
+        }
+    ]
+}
