@@ -8,6 +8,10 @@ app = Flask(__name__, template_folder='templates')
 def index():
     return render_template('index.html')
 
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
 @app.route('/handle_message', methods=['POST'])
 def handle_message():
     message = request.form['message']
